@@ -1,10 +1,27 @@
-/* ============================================
-   achievements.css
-   Сторінка "Досягнення" — Victory FC
-   Залежить від: global.css
-   ============================================ */
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 60px 20px;
+  min-width: 100%;
 
-/* ── HERO ── */
+  background-color: var(--bg-secondary);
+  padding: 20px 120px;
+}
+
+.hero-text-block h1 {
+  font-size: 5rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-text-block .outline {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 3px #00a8e8;
+}
+
 .hero {
   padding: 64px 0 56px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
