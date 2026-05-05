@@ -1,0 +1,237 @@
+/* Стилі для Hero-блоку сторінки "Про нас" */
+.about-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 60px 20px;
+  margin-bottom: 80px;
+  min-width: 100%;
+
+  background-color: var(--bg-secondary);
+  padding: 20px 120px;
+}
+
+.hero-text-block h1 {
+  font-size: 5rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-text-block .outline {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 3px #00a8e8;
+}
+
+/* Міні-статистика (три бокси в ряд) */
+.mini-stats {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.m-stat-box {
+  padding: 20px 30px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.m-stat-box:last-child {
+  border-right: none;
+}
+
+.m-stat-box strong {
+  display: block;
+  font-size: 1.5rem;
+  color: #00a8e8;
+}
+
+.m-stat-box span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #666;
+}
+
+/* Сітка історії */
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Мобільна версія */
+  gap: 80px;
+}
+
+.history-article h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.history-article h2 span {
+  color: #00a8e8;
+}
+
+.history-article p {
+  color: #a0a0a0;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Вертикальний Таймлайн */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+/* Лінія таймлайну */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background: rgba(0, 168, 232, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* Кружечок на лінії */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: #00a8e8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00a8e8;
+}
+
+.timeline-item .year {
+  color: #00a8e8;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.timeline-item h3 {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.timeline-item p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* АДАПТИВНІСТЬ [cite: 9, 10] */
+@media (min-width: 992px) {
+  .history-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mini-stats {
+    margin-top: 40px;
+  }
+}
+
+.team-gallery {
+  padding: 100px 20px;
+}
+
+/* Вирівнювання заголовка та кнопок */
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.gallery-header h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.gallery-header h2 span {
+  color: #00befa; /* Блакитний акцент з макета */
+}
+
+/* Кнопки навігації */
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-btn:hover {
+  border-color: #00befa;
+  color: #00befa;
+}
+
+#gallery-counter {
+  font-size: 1.2rem;
+  color: #00befa;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Відображення фото */
+.gallery-display {
+  width: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.gallery-display img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Пагінація у вигляді ліній */
+.gallery-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bar {
+  width: 40px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bar.active {
+  background: #00befa;
+}
+
+/* Адаптивність */
+@media (max-width: 991px) {
+  .gallery-header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

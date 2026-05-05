@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/pages/about.css" />
+    <title>Victory - Про нас</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav container">
+        <a class="logo" href="./index.html">Victory MC</a>
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a class="active" href="#">Про команду</a></li>
+          <li><a href="acihevements.html">Досягнення</a></li>
+          <li><a href="">Статистика</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about-hero container">
+        <div class="hero-text-block">
+          <h1>
+            <span class="solid">Про</span>
+            <span class="outline">команду</span>
+          </h1>
+          <p>
+            Дізнайся більше про нашу історію, філософію та людей, які роблять ФК
+            Victory особливим.
+          </p>
+        </div>
+
+        <div class="mini-stats">
+          <div class="m-stat-box">
+            <strong>2008</strong><span>Засновано</span>
+          </div>
+          <div class="m-stat-box"><strong>24</strong><span>Гравці</span></div>
+          <div class="m-stat-box"><strong>7</strong><span>Трофеїв</span></div>
+        </div>
+      </section>
+
+      <section class="history-section container">
+        <div class="history-grid">
+          <article class="history-article">
+            <h2>Від <span>ентузіастів</span> до <span>чемпіонів</span></h2>
+            <p>
+              ФК Victory народився у 2008 році з мрії групи однодумців, яким
+              бракувало місця, де можна грати в справжній футбол. Без спонсорів,
+              без стадіону, зате з величезним бажанням.
+            </p>
+            <p>
+              Перші роки були складними — тренувалися на міських полях, форму
+              шили самі, а на виїзні матчі їхали власними автівками. Але саме
+              тоді сформувався той командний дух, який досі є нашою головною
+              перевагою.
+            </p>
+            <p>
+              У 2014 році прийшло перше чемпіонство. Це змінило все. Клуб
+              отримав визнання, залучив нових гравців і відкрив дитячу академію
+              у 2020 році. Сьогодні ФК Victory — це 16 сезонів досвіду, 7
+              трофеїв і понад 60 вихованців.
+            </p>
+          </article>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">2008</span>
+              <h3>Заснування клубу</h3>
+              <p>
+                Перша гра, перший склад, перша мрія. 11 гравців і один м'яч.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2012</span>
+              <h3>Вступ до регіональної ліги</h3>
+              <p>
+                Перший офіційний сезон — 6-е місце. Найкращий бомбардир Дмитро
+                Шевченко — 12 голів.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2013</span>
+              <h3>Перше Чемпіонство</h3>
+              <p>
+                22 перемоги у 26 матчах. Найкращий сезон на той момент. Регіон
+                дізнався про Victory.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2015</span>
+              <h3>Кубок регіону</h3>
+              <p>
+                Перемога у фіналі в додатковий час, рахунок 2:1. Незабутній
+                матч.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2020</span>
+              <h3>Третє Чемпіонство + рекорди</h3>
+              <p>
+                Поточний сезон. Боремося за п'єдестал і готуємося до нових
+                перемог.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team-gallery container">
+        <div class="gallery-header">
+          <h2>ФОТО НАШОЇ <span>КОМАНДИ</span></h2>
+          <div class="gallery-controls">
+            <button id="prev-photo" class="nav-btn" aria-label="Попереднє фото">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <span id="gallery-counter">1 / 4</span>
+            <button id="next-photo" class="nav-btn" aria-label="Наступне фото">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="gallery-display">
+          <img
+            src="assets/team-photo-2.png"
+            id="current-team-img"
+            alt="Фото нашої команди - 1"
+            class="active-img"
+          />
+        </div>
+
+        <div class="gallery-pagination">
+          <span class="bar active" data-index="1"></span>
+          <span class="bar" data-index="2"></span>
+          <span class="bar" data-index="3"></span>
+          <span class="bar" data-index="4"></span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <h2 class="footer-logo">Victory FC</h2>
+            <p class="footer-text">
+              Аматорський футбольний клуб з Харкова. Засновано у 2008 році.
+              Грали, перемагали, не здавались.
+            </p>
+          </div>
+
+          <div class="footer-group">
+            <h3>Клуб</h3>
+            <ul>
+              <li><a href="#">Склад команди</a></li>
+              <li><a href="#">Тренерський штаб</a></li>
+              <li><a href="#">Академія</a></li>
+              <li><a href="#">Новини</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-group">
+            <h3>Навігація</h3>
+            <ul>
+              <li><a href="index.html">Головна</a></li>
+              <li><a href="about.html">Про нас</a></li>
+              <li><a href="achievements.html">Досягнення</a></li>
+              <li><a href="stats.html">Статистика матчів</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-group">
+            <h3>Контакти</h3>
+            <address class="footer-address">
+              Київ, вул. Спортивна 12<br />
+              <a href="mailto:info@fc-burya.ua">info@fc-burya.ua</a><br />
+              <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+            </address>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 ФК Буря. Усі права захищені.</p>
+          <p>Сезон 2026 · Активний</p>
+          <div class="footer-legal">
+            <a href="#">Політика конфіденційності</a>
+            <a href="#">Умови використання</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
