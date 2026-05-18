@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="styles/pages/achievements.css" />
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
     <title>Victory - Досягнення</title>
+    <script src="scripts/common.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="nav container">
         <a class="logo" href="./index.html">Victory MC</a>
-        <ul>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
           <li><a href="index.html">Головна</a></li>
           <li><a href="about.html">Про команду</a></li>
           <li class="active"><a href="#">Досягнення</a></li>
-          <li><a href="">Статистика</a></li>
         </ul>
       </nav>
     </header>
@@ -294,7 +297,7 @@
           <div class="footer-group">
             <h3>Контакти</h3>
             <address class="footer-address">
-              Київ, вул. Спортивна 12<br />
+              <p>Київ, вул. Спортивна 12</p>
               <a href="mailto:info@fc-burya.ua">info@fc-burya.ua</a><br />
               <a href="tel:+380501234567">+38 (050) 123-45-67</a>
             </address>

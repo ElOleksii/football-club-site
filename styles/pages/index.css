@@ -194,3 +194,108 @@ h1 {
     grid-template-columns: 1fr 1fr; /* Дві колонки */
   }
 }
+
+@media (max-width: 575px) {
+  /* Hero */
+  .hero {
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+    gap: 24px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .brand-group {
+    font-size: 3.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    min-width: 160px;
+    padding: 0.85rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .hero-img img {
+    border-radius: 20px;
+  }
+
+  /* About */
+  .about-section {
+    padding: 40px 0;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .highlight-year {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .info-table {
+    max-width: 100%;
+  }
+
+  .info-table td {
+    font-size: 0.8rem;
+    padding: 10px 0;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .about-buttons .btn-primary {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* Stats */
+  .stats-bar {
+    gap: 20px;
+    padding: 30px 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 120px;
+  }
+
+  .stat-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .stat-item p {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding-top: 20px;
+  }
+}
