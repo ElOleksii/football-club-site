@@ -106,7 +106,7 @@ h1 {
 }
 
 .about-description {
-  color: #a0a0a0;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin-bottom: 30px;
   max-width: 500px;
