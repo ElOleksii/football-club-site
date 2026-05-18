@@ -49,7 +49,7 @@
 .m-stat-box span {
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 /* Сітка історії */
@@ -73,57 +73,6 @@
   color: #a0a0a0;
   margin-bottom: 20px;
   font-size: 1.1rem;
-}
-
-/* Вертикальний Таймлайн */
-.timeline {
-  position: relative;
-  padding-left: 30px;
-}
-
-/* Лінія таймлайну */
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 5px;
-  bottom: 5px;
-  width: 2px;
-  background: rgba(0, 168, 232, 0.3);
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-/* Кружечок на лінії */
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: -34px;
-  top: 5px;
-  width: 10px;
-  height: 10px;
-  background: #00a8e8;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #00a8e8;
-}
-
-.timeline-item .year {
-  color: #00a8e8;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.timeline-item h3 {
-  font-size: 1.2rem;
-  margin: 5px 0;
-}
-
-.timeline-item p {
-  color: #666;
-  font-size: 0.9rem;
 }
 
 /* АДАПТИВНІСТЬ [cite: 9, 10] */
@@ -283,22 +232,6 @@
 
   .history-article p {
     font-size: 0.9rem;
-  }
-
-  .timeline {
-    padding-left: 24px;
-  }
-
-  .timeline-item::before {
-    left: -28px;
-  }
-
-  .timeline-item {
-    margin-bottom: 28px;
-  }
-
-  .timeline-item h3 {
-    font-size: 1rem;
   }
 
   .team-gallery {
